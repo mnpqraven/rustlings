@@ -4,11 +4,20 @@
 // Make me compile and pass the test!
 // Execute the command `rustlings hint vec1` if you need hints.
 
-// I AM NOT DONE
 
 fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     let a = [10, 20, 30, 40]; // a plain array
-    let v = // TODO: declare your vector here with the macro for vectors
+    // option 1
+    // let mut v: Vec<i32> = Vec::new();
+    // for element in a {
+    //     v.push(element)
+    // }
+
+    // option 2
+    // let v = vec![10,20,30,40];
+
+    // option 3
+    let v = a.to_vec();
 
     (a, v)
 }
